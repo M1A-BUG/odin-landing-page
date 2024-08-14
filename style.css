@@ -1,0 +1,160 @@
+:root {
+    --header-color: rgb(79, 77, 77);
+    --main-blue: #C5D2E2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E8EAEB;
+    display: flex;
+    flex-direction: column;
+}
+
+#header, #footer {
+    width: 100%;
+    padding: 13px 10px;
+}
+
+#header {
+    position: fixed;
+    background: var(--main-blue);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#header img {
+    width: 60px;
+}
+
+#header h1 {
+    color: var(--header-color);
+}
+
+nav {
+    margin-left: auto;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+#header ul {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+#header li {
+    border: 2px var(--header-color) solid;
+    border-radius: 5px;
+    padding: 2px 5px;
+}
+
+#about {
+    background: var(--header-color);
+    margin-top: 82px;
+    padding: 16px 5px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.info {
+    flex: 2;
+    color: var(--main-blue);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.vid {
+    width: 55%;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#offers {
+    border: 2px dashed lightgrey;
+    padding: 32px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+#offers h3 {
+    font-size: 30px;
+    color: var(--header-color);
+    padding-bottom: 24px;
+}
+
+#offers .table {
+    margin: 0 auto;
+    width: 90vw;
+    display: grid;
+    grid-template-areas: 
+        "offer price";
+}
+
+#offers li {
+    border: solid lightgray 1px;
+    padding: 6px;
+}
+
+
+#form {
+    padding: 16px 5px;
+    display: flex;
+    align-items: center;
+    background: var(--main-blue);
+    width: 85vh;
+    margin: 0 auto;
+    margin-bottom: 70px;
+    font: 16px bold ;
+    border-radius: 10px;
+}
+
+#form .email {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: 30px;
+}
+
+#form #submit {
+    margin-left: auto;
+    margin-right: 60px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    font-size: large;
+}
+
+#footer {
+    margin-top: auto;
+    background: var(--header-color);
+    font-size: 20px;
+    text-align: center;
+    color: var(--main-blue);
+}
+
+@media (max-width: 560px) {
+    #footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
